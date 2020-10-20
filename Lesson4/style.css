@@ -1,0 +1,123 @@
+/*Базовые стили*/
+
+body {
+    background-color: #f8f8f8;
+}
+
+.clear {
+    clear: both;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    text-transform: capitalize;
+}
+
+/* Хедер */
+
+.header {
+    height: 100px;
+}
+
+.header-logo {
+    display: block;
+    float: left;
+    background-image: url('img/logo.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.header-menu {
+    float: left;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+/* Футер */
+
+.footer {
+}
+
+/*Меню*/
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    ul.menu > li a {
+        color: black;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+        ul.menu > li a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+/*Подробное описание товара*/
+
+.image-main {
+    outline: 1px solid #666;
+}
+
+    .image-main:hover {
+        outline: none;
+    }
+
+.heading {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.desc-short {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.desc-full p {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+    .desc-full p:first-letter {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+/*Котакты*/
+form.feedback .field {
+    font-size: 14px;
+    color: blue;
+}
+
+form.feedback input.field {
+    width: 200px;
+    height: 20px;
+}
+
+    form.feedback input.field[type="email"]:focus {
+        background-color: cornflowerblue;
+        color: red;
+    }
+
+/* Таблица */
+
+.sample-table td {
+    border: 1px solid black;
+    height: 25px;
+    width: 100px;
+}
+
+    .sample-table tr:first-child td {
+        height: 50px;
+    }
