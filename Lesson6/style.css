@@ -1,4 +1,6 @@
-﻿* {
+﻿/*#region base*/
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -18,6 +20,10 @@ body {
     width: 1366px;
     position: relative;
 }
+
+/*#endregion*/
+
+/*#region navbar*/
 
 .navbar {
     position: absolute;
@@ -54,9 +60,8 @@ body {
                 padding: 0 15px 5px;
             }
 
-            .navbar .menu .item.active a {
+            .navbar .menu .item.active a, .navbar .menu .item:hover a {
                 color: #212121;
-                font-weight: bold;
                 border-bottom: 3px solid #212121;
             }
 
@@ -67,6 +72,10 @@ body {
         width: 23px;
         height: 23px;
     }
+
+/*#endregion*/
+
+/*#region slider base*/
 
 .slider {
     height: 800px;
@@ -142,6 +151,9 @@ body {
             margin-top: 20px;
         }
 
+    /*#endregion*/
+
+    /*#region slider top*/
 
     .slider.top {
         background-image: url('img/top-slider-img.jpg');
@@ -151,10 +163,224 @@ body {
             color: #43a047;
         }
 
-    .slider.hot-deals {
-        background-image: url('img/hot-dealsl-slider-img.jpg');
+/*#endregion*/
+
+/*#region featured-product*/
+
+.featured-product {
+    margin: 0 100px;
+    padding: 100px 0;
+}
+
+    .featured-product .tab-controll .menu {
+        list-style: none;
     }
 
-        .slider.hot-deals .tag {
-            color: #e53935;
+        .featured-product .tab-controll .menu .item {
+            display: inline-block;
         }
+
+            .featured-product .tab-controll .menu .item a {
+                width: 80px;
+                height: 25px;
+                color: #6c6c6c;
+                font-size: 36px;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 0 15px 5px;
+            }
+
+            .featured-product .tab-controll .menu .item.active a, .featured-product .tab-controll .menu .item:hover a {
+                color: #212121;
+                border-bottom: 3px solid #212121;
+            }
+
+    .featured-product .tab-content {
+        padding-top: 50px;
+    }
+
+        .featured-product .tab-content a {
+            padding-right: 15px;
+            display: inline-block;
+        }
+
+        .featured-product .tab-content img:hover {
+            outline: 1px solid green;
+        }
+
+.trending-products.featured-product .tab-content a {
+    margin-bottom: 20px;
+}
+
+/*#endregion*/
+.slider.hot-deals {
+    background-image: url('img/hot-dealsl-slider-img.jpg');
+}
+
+    .slider.hot-deals .tag {
+        color: #e53935;
+    }
+
+/*#region promo-product*/
+
+.promo-product .promo-content1, .promo-product .promo-content2 {
+    float: left;
+    width: 50%;
+}
+
+.promo-product .slider {
+    height: 683px;
+}
+
+    .promo-product .slider .content {
+        padding-top: 225px;
+        padding-left: 50px;
+    }
+
+    .promo-product .slider .tag {
+        color: #1e88e5;
+    }
+
+    .promo-product .slider .name {
+        color: #212121;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: none;
+    }
+
+    .promo-product .slider.promo-content1 {
+        background-image: url('img/promo-product1-img.jpg');
+    }
+
+    .promo-product .slider.promo-content2 {
+        background-image: url('img/promo-product2-img.jpg');
+    }
+
+/*#endregion*/
+
+/*#region mobile-app*/
+.slider.mobile-app {
+    height: 516px;
+    background-image: url('img/mobile-app-img.jpg');
+}
+
+    .slider.mobile-app .content {
+        padding-top: 120px;
+    }
+
+        .slider.mobile-app .content .details {
+            font-size: 22px;
+        }
+
+        .slider.mobile-app .content .buttons {
+            padding-top: 30px;
+        }
+
+            .slider.mobile-app .content .buttons a {
+                text-decoration: none;
+                margin-right: 10px;
+            }
+
+/*#endregion*/
+
+/*#region footer*/
+.footer {
+    background-color: #f7f7f7;
+    padding: 0 100px;
+}
+
+    .footer .content {
+        padding-top: 120px;
+    }
+
+        .footer .content .contact {
+            float: left;
+            margin-right: 75px;
+            width: 220px;
+        }
+
+        .footer .content .menu {
+            float: left;
+        }
+
+            .footer .content .menu ul {
+                display: block;
+                float: left;
+                list-style: none;
+            }
+
+                .footer .content .menu ul.first {
+                    margin-right: 100px;
+                }
+
+                .footer .content .menu ul > li a {
+                    color: #212121;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.7px;
+                    text-decoration: none;
+                }
+
+        .footer .content .subscribe {
+            float: right;
+            width: 370px;
+        }
+
+            .footer .content .subscribe input {
+                width: 100%;
+                height: 48px;
+                border: 1px solid #d9dee1;
+                padding-left: 15px;
+                color: #6c6c6c;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+            }
+
+        .footer .content h3 {
+            color: #6c6c6c;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            padding-bottom: 10px;
+        }
+
+        .footer .content p {
+            color: #212121;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding-bottom: 30px;
+        }
+
+    .footer .bottom {
+        padding-top: 65px;
+        padding-bottom: 30px;
+    }
+
+        .footer .bottom, .footer .bottom a {
+            color: #6c6c6c;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+        }
+
+            .footer .bottom a {
+                text-decoration: none;
+            }
+
+            .footer .bottom .copyright {
+                float: left;
+            }
+
+            .footer .bottom .policy {
+                float: right;
+            }
+
+/*#endregion*/
